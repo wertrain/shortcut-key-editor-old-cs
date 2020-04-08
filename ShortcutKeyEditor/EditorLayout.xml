@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+  <tab label="エディタ">
+    <keyset label="元に戻す" name="undo">Ctrl+Z</keyset>
+    <keyset label="やり直し" name="redo" />
+    <keyset label="やり直し" name="redo" />
+    <keyset label="やり直し" name="redo" />
+    <keyset label="やり直し" name="redo" />
+    <keyset label="やり直し" name="redo" />
+    <keyset label="やり直し" name="redo" />
+    <keyset label="やり直し" name="redo" />
+    <keyset label="やり直し" name="redo" />
+    <keyset label="やり直し" name="redo" />
+    <keyset label="やり直し" name="redo" />
+    <keyset label="やり直し" name="redo" />
+    <keyset label="やり直し" name="redo" />
+  </tab>
+  <tab label="タイムライン">
+    <keyset label="元に戻す" name="undo" />
+    <keyset label="やり直し" name="redo" />
+    <keyset label="やり直し" name="redo" />
+    <keyset label="やり直し" name="redo" />
+    <keyset label="やり直し" name="redo" />
+    <keyset label="やり直し" name="redo" />
+    <keyset label="やり直し" name="redo" />
+    <keyset label="やり直し" name="redo" />
+    <keyset label="やり直し" name="redo" />
+    <keyset label="やり直し" name="redo" />
+    <keyset label="やり直し" name="redo" />
+    <keyset label="やり直し" name="redo" />
+    <keyset label="やり直し" name="redo" />
+  </tab>
+</layout>
