@@ -90,5 +90,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShortcutKeyLib\ShortcutKeyLib.csproj">
+      <Project>{169c16d2-69b5-441f-a405-d8b14606d62f}</Project>
+      <Name>ShortcutKeyLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

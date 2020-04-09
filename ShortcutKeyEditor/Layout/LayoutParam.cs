@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Drawing;
 
 namespace ShortcutKeyEditor
 {
@@ -23,6 +23,64 @@ namespace ShortcutKeyEditor
         public List<KeySet> KeySets { get; set; }
 
         /// <summary>
+        /// スキン
+        /// </summary>
+        public SkinSet Skin { get; set; }
+
+        /// <summary>
+        /// スキン
+        /// </summary>
+        public class SkinSet
+        {
+            /// <summary>
+            /// スキン
+            /// </summary>
+            public Key KeyColor { get; set; }
+
+            /// <summary>
+            /// スキン
+            /// </summary>
+            public Panel PanelColor { get; set; }
+
+            /// <summary>
+            /// キー項目
+            /// </summary>
+            public class Key
+            {
+                /// <summary>
+                /// キー項目の背景色
+                /// </summary>
+                public Color Background { get; set; }
+
+                /// <summary>
+                /// キー項目のラベル文字色
+                /// </summary>
+                public Color Label { get; set; }
+
+                /// <summary>
+                /// キー項目のテキストボックス背景色
+                /// </summary>
+                public Color Textbox { get; set; }
+            }
+
+            /// <summary>
+            /// パネル
+            /// </summary>
+            public class Panel
+            {
+                /// <summary>
+                /// パネルの背景色
+                /// </summary>
+                public Color Background { get; set; }
+
+                /// <summary>
+                /// パネルのラベル文字色
+                /// </summary>
+                public Color Label { get; set; }
+            }
+        }
+
+        /// <summary>
         /// タブ
         /// </summary>
         public class Tab
@@ -31,6 +89,11 @@ namespace ShortcutKeyEditor
             /// ラベル
             /// </summary>
             public string Label { get; set; }
+
+            /// <summary>
+            /// 識別名
+            /// </summary>
+            public string Name { get; set; }
 
             /// <summary>
             /// 所属キーのリスト
@@ -49,7 +112,7 @@ namespace ShortcutKeyEditor
             public string Label { get; set; }
 
             /// <summary>
-            /// 名前
+            /// 識別名
             /// </summary>
             public string Name { get; set; }
 

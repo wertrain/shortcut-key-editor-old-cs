@@ -46,6 +46,7 @@
             // 
             this.textBoxKeyEdit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxKeyEdit.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.textBoxKeyEdit.Location = new System.Drawing.Point(153, 4);
             this.textBoxKeyEdit.Name = "textBoxKeyEdit";
             this.textBoxKeyEdit.ReadOnly = true;

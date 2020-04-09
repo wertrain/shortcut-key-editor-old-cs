@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace ShortcutKeyEditor
 {
+    /// <summary>
+    /// ショートカットキー入力コントロール
+    /// </summary>
     public partial class KeySetControl : UserControl
     {
         /// <summary>
@@ -18,10 +21,39 @@ namespace ShortcutKeyEditor
         public Keys Key { get; private set; }
 
         /// <summary>
+        /// セットされているキーの文字列（"Ctrl+Z" のようなフォーマット）
+        /// </summary>
+        public string KeyText { get { return KeysToString(Key); } }
+
+        /// <summary>
+        /// コントロールの識別名
+        /// </summary>
+        public string KeySetName { get; set; }
+
+        /// <summary>
+        /// ラベル文字色
+        /// </summary>
+        public Color LabelColor
+        {
+            set
+            {
+                labelKeyName.ForeColor = value;
+                labelSeparator.ForeColor = value;
+                textBoxKeyEdit.ForeColor = value;
+            }
+        }
+
+        /// <summary>
+        /// テキストボックス色
+        /// </summary>
+        public Color TextboxColor { set { textBoxKeyEdit.BackColor = value; } }
+
+        /// <summary>
         /// コンストラクタ
         /// </summary>
         public KeySetControl()
         {
+
             InitializeComponent();
         }
 

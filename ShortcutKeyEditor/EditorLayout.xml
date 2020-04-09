@@ -1,33 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
-  <tab label="エディタ">
+  <skin>
+    <keyset>
+      <label>#FFFAFA</label>
+      <textbox></textbox>
+      <background>#494949</background>
+    </keyset>
+    <panel>
+      <text>#E5E5E5</text>
+      <background>#393939</background>
+    </panel>
+  </skin>
+  <tab label="エディタ" name="editor">
     <keyset label="元に戻す" name="undo">Ctrl+Z</keyset>
-    <keyset label="やり直し" name="redo" />
-    <keyset label="やり直し" name="redo" />
-    <keyset label="やり直し" name="redo" />
-    <keyset label="やり直し" name="redo" />
-    <keyset label="やり直し" name="redo" />
-    <keyset label="やり直し" name="redo" />
-    <keyset label="やり直し" name="redo" />
-    <keyset label="やり直し" name="redo" />
-    <keyset label="やり直し" name="redo" />
-    <keyset label="やり直し" name="redo" />
-    <keyset label="やり直し" name="redo" />
-    <keyset label="やり直し" name="redo" />
+    <keyset label="やり直し" name="redo1" />
+    <keyset label="やり直し" name="redo2" />
+    <keyset label="やり直し" name="redo3" />
+    <keyset label="やり直し" name="redo4" />
+    <keyset label="やり直し" name="redo6" />
+    <keyset label="やり直し" name="redo7" />
+    <keyset label="やり直し" name="redo8" />
+    <keyset label="やり直し" name="redo9" />
+    <keyset label="やり直し" name="redo10" />
+    <keyset label="やり直し" name="redo11" />
+    <keyset label="やり直し" name="redo12" />
+    <keyset label="やり直し" name="redo13" />
+    <keyset label="やり直し" name="redo14" />
   </tab>
-  <tab label="タイムライン">
+  <tab label="タイムライン" name="timeline">
     <keyset label="元に戻す" name="undo" />
-    <keyset label="やり直し" name="redo" />
-    <keyset label="やり直し" name="redo" />
-    <keyset label="やり直し" name="redo" />
-    <keyset label="やり直し" name="redo" />
-    <keyset label="やり直し" name="redo" />
-    <keyset label="やり直し" name="redo" />
-    <keyset label="やり直し" name="redo" />
-    <keyset label="やり直し" name="redo" />
-    <keyset label="やり直し" name="redo" />
-    <keyset label="やり直し" name="redo" />
-    <keyset label="やり直し" name="redo" />
-    <keyset label="やり直し" name="redo" />
+    <keyset label="やり直し" name="redo1" />
+    <keyset label="やり直し" name="redo2" />
+    <keyset label="やり直し" name="redo3" />
+    <keyset label="やり直し" name="redo4" />
+    <keyset label="やり直し" name="redo6" />
+    <keyset label="やり直し" name="redo7" />
+    <keyset label="やり直し" name="redo8" />
+    <keyset label="やり直し" name="redo9" />
+    <keyset label="やり直し" name="redo10" />
+    <keyset label="やり直し" name="redo11" />
+    <keyset label="やり直し" name="redo12" />
+    <keyset label="やり直し" name="redo13" />
+    <keyset label="やり直し" name="redo14" />
   </tab>
 </layout>
