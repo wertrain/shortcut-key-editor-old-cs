@@ -58,6 +58,11 @@ namespace ShortcutKeyEditor
                 public Color Label { get; set; }
 
                 /// <summary>
+                /// キー項目のテキスト文字色
+                /// </summary>
+                public Color Text { get; set; }
+
+                /// <summary>
                 /// キー項目のテキストボックス背景色
                 /// </summary>
                 public Color Textbox { get; set; }

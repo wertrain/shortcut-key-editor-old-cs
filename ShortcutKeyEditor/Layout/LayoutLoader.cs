@@ -63,6 +63,7 @@ namespace ShortcutKeyEditor
                 var skinKeyset = skin?.Element(ElementNameKeySet);
                 skinSet.KeyColor = new LayoutParam.SkinSet.Key();
                 skinSet.KeyColor.Label = TranslateColor(skinKeyset?.Element(ElementNameLabel)?.Value, SystemColors.ControlText);
+                skinSet.KeyColor.Text = TranslateColor(skinKeyset?.Element(ElementNameText)?.Value, SystemColors.ControlText);
                 skinSet.KeyColor.Textbox = TranslateColor(skinKeyset?.Element(ElementNameTextbox)?.Value, SystemColors.Control);
                 skinSet.KeyColor.Background = TranslateColor(skinKeyset?.Element(ElementNameBackground)?.Value, SystemColors.Window);
                 var skinPanel = skin?.Element(ElementNamePanel);
@@ -131,6 +132,11 @@ namespace ShortcutKeyEditor
         /// 要素名：ラベル
         /// </summary>
         private static readonly string ElementNameLabel = "label";
+
+        /// <summary>
+        /// 要素名：テキスト
+        /// </summary>
+        private static readonly string ElementNameText = "text";
 
         /// <summary>
         /// 要素名：テキストボックス

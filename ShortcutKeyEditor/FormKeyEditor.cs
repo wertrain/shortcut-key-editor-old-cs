@@ -57,6 +57,7 @@ namespace ShortcutKeyEditor
                     keyset.SetLabelText(layoutKeySet.Label);
                     keyset.SetKeyText(layoutKeySet.KeyText);
                     keyset.LabelColor = layout.Skin.KeyColor.Label;
+                    keyset.TextColor = layout.Skin.KeyColor.Text;
                     keyset.TextboxColor = layout.Skin.KeyColor.Textbox;
                     keyset.BackColor = layout.Skin.KeyColor.Background;
                     keyset.Tag = layoutKeySet;

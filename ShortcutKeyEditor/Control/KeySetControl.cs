@@ -39,9 +39,13 @@ namespace ShortcutKeyEditor
             {
                 labelKeyName.ForeColor = value;
                 labelSeparator.ForeColor = value;
-                textBoxKeyEdit.ForeColor = value;
             }
         }
+
+        /// <summary>
+        /// テキスト文字色
+        /// </summary>
+        public Color TextColor { set { textBoxKeyEdit.ForeColor = value; } }
 
         /// <summary>
         /// テキストボックス色
@@ -53,7 +57,6 @@ namespace ShortcutKeyEditor
         /// </summary>
         public KeySetControl()
         {
-
             InitializeComponent();
         }
 

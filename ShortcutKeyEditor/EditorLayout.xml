@@ -3,11 +3,12 @@
   <skin>
     <keyset>
       <label>#FFFAFA</label>
-      <textbox></textbox>
+      <text>#000000</text>
+      <textbox>#FFFFFF</textbox>
       <background>#494949</background>
     </keyset>
     <panel>
-      <text>#E5E5E5</text>
+      <label>#E5E5E5</label>
       <background>#393939</background>
     </panel>
   </skin>
