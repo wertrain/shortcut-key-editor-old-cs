@@ -19,7 +19,7 @@ namespace ShortcutKeyEditor
         /// <summary>
         /// コンストラクタ
         /// </summary>
-        public FormKeyEditor()
+        public FormKeyEditor(string [] args)
         {
             InitializeComponent();
         }
@@ -31,12 +31,18 @@ namespace ShortcutKeyEditor
         /// <param name="e"></param>
         private void FormKeyEditor_Load(object sender, EventArgs e)
         {
-            var layout = LayoutLoader.Load(@"D:\Develop\C#\shortcut-key-editor-cs\ShortcutKeyEditor\EditorLayout.xml");
+            var layout = LayoutLoader.Load(@".\EditorLayout.xml");
 
             if (!CheckLayoutParam(layout))
             {
                 Close();
                 return;
+            }
+
+            var settings = ShortcutKeyManager.LoadSettings(@".\shortcutkeys.xml");
+            if (settings == null)
+            {
+                settings = new Dictionary<string, ShortcutKeyManager.KeySet>();
             }
 
             foreach (var layoutTab in layout.Tabs)
@@ -50,21 +56,36 @@ namespace ShortcutKeyEditor
                 flowPanel.Dock = DockStyle.Fill;
                 flowPanel.AutoScroll = true;
                 flowPanel.BackColor = layout.Skin.PanelColor.Background;
+                int labelMaxWidth = 0;
                 foreach (var layoutKeySet in layoutTab.KeySets)
                 {
+                    var keySetName = layoutTab.Name + "_" + layoutKeySet.Name;
+
                     var keyset = new KeySetControl();
-                    keyset.KeySetName = layoutTab.Name + "_" + layoutKeySet.Name;
+                    keyset.KeySetName = keySetName;
                     keyset.SetLabelText(layoutKeySet.Label);
-                    keyset.SetKeyText(layoutKeySet.KeyText);
+                    keyset.SetKeyText(settings.ContainsKey(keySetName) ? settings[keySetName].KeyText : layoutKeySet.KeyText);
                     keyset.LabelColor = layout.Skin.KeyColor.Label;
                     keyset.TextColor = layout.Skin.KeyColor.Text;
                     keyset.TextboxColor = layout.Skin.KeyColor.Textbox;
                     keyset.BackColor = layout.Skin.KeyColor.Background;
                     keyset.Tag = layoutKeySet;
                     flowPanel.Controls.Add(keyset);
+
+                    labelMaxWidth = Math.Max(keyset.LabelWidth, labelMaxWidth);
                 }
                 tabPage.Controls.Add(flowPanel);
                 tabControlMain.TabPages.Add(tabPage);
+
+                // 表示幅の調整
+                foreach (var control in flowPanel.Controls)
+                {
+                    if (control is KeySetControl)
+                    {
+                        var keyset = control as KeySetControl;
+                        keyset.Width = keyset.Width + labelMaxWidth;
+                    }
+                }
             }
         }
 

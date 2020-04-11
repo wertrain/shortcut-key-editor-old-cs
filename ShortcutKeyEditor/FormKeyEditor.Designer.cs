@@ -47,7 +47,7 @@
             this.tableLayoutPanelMain.RowCount = 2;
             this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.tableLayoutPanelMain.Size = new System.Drawing.Size(350, 506);
+            this.tableLayoutPanelMain.Size = new System.Drawing.Size(444, 558);
             this.tableLayoutPanelMain.TabIndex = 0;
             // 
             // tabControlMain
@@ -56,17 +56,17 @@
             this.tabControlMain.Location = new System.Drawing.Point(3, 3);
             this.tabControlMain.Name = "tabControlMain";
             this.tabControlMain.SelectedIndex = 0;
-            this.tabControlMain.Size = new System.Drawing.Size(344, 467);
+            this.tabControlMain.Size = new System.Drawing.Size(438, 519);
             this.tabControlMain.TabIndex = 0;
             // 
             // button_save_settings
             // 
             this.button_save_settings.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_save_settings.Location = new System.Drawing.Point(3, 476);
+            this.button_save_settings.Location = new System.Drawing.Point(3, 528);
             this.button_save_settings.Name = "button_save_settings";
-            this.button_save_settings.Size = new System.Drawing.Size(344, 27);
+            this.button_save_settings.Size = new System.Drawing.Size(438, 27);
             this.button_save_settings.TabIndex = 1;
-            this.button_save_settings.Text = "Save (&S)";
+            this.button_save_settings.Text = "OK (&O)";
             this.button_save_settings.UseVisualStyleBackColor = true;
             this.button_save_settings.Click += new System.EventHandler(this.button_save_settings_Click);
             // 
@@ -74,7 +74,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(350, 506);
+            this.ClientSize = new System.Drawing.Size(444, 558);
             this.Controls.Add(this.tableLayoutPanelMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormKeyEditor";

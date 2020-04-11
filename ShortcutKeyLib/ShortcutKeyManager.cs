@@ -77,7 +77,7 @@ namespace ShortcutKeyLib
         /// 
         /// </summary>
         /// <returns></returns>
-        public Dictionary<string, KeySet> LoadSettings(string fileName)
+        public static Dictionary<string, KeySet> LoadSettings(string fileName)
         {
             var shortcutKeys = new Dictionary<string, KeySet>();
 
@@ -86,7 +86,6 @@ namespace ShortcutKeyLib
                 var xml = XDocument.Load(fileName);
 
                 var root = xml.Element(ElementNameShortcutkeys);
-                
 
                 var keys = root.Elements(ElementNameKey);
                 foreach (var key in keys)
@@ -114,7 +113,7 @@ namespace ShortcutKeyLib
         /// キー入力テキストを設定
         /// </summary>
         /// <param name="text"></param>
-        private Keys KeyTextToKey(string text)
+        private static Keys KeyTextToKey(string text)
         {
             var textList = new List<string>(text.Split(InputKeySeparator.ToCharArray()));
 

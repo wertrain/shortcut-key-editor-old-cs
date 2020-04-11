@@ -38,27 +38,27 @@
             this.labelKeyName.AutoSize = true;
             this.labelKeyName.Location = new System.Drawing.Point(11, 8);
             this.labelKeyName.Name = "labelKeyName";
-            this.labelKeyName.Size = new System.Drawing.Size(83, 12);
+            this.labelKeyName.Size = new System.Drawing.Size(25, 12);
             this.labelKeyName.TabIndex = 0;
-            this.labelKeyName.Text = "ショートカットキー";
+            this.labelKeyName.Text = "キー";
             // 
             // textBoxKeyEdit
             // 
-            this.textBoxKeyEdit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxKeyEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxKeyEdit.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.textBoxKeyEdit.Location = new System.Drawing.Point(153, 4);
+            this.textBoxKeyEdit.Location = new System.Drawing.Point(45, 4);
             this.textBoxKeyEdit.Name = "textBoxKeyEdit";
             this.textBoxKeyEdit.ReadOnly = true;
-            this.textBoxKeyEdit.Size = new System.Drawing.Size(150, 19);
+            this.textBoxKeyEdit.Size = new System.Drawing.Size(121, 19);
             this.textBoxKeyEdit.TabIndex = 1;
             this.textBoxKeyEdit.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxKeyEdit_KeyDown);
             this.textBoxKeyEdit.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.textBoxKeyEdit_PreviewKeyDown);
             // 
             // labelSeparator
             // 
+            this.labelSeparator.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelSeparator.AutoSize = true;
-            this.labelSeparator.Location = new System.Drawing.Point(141, 8);
+            this.labelSeparator.Location = new System.Drawing.Point(36, 8);
             this.labelSeparator.Name = "labelSeparator";
             this.labelSeparator.Size = new System.Drawing.Size(7, 12);
             this.labelSeparator.TabIndex = 2;
@@ -74,7 +74,7 @@
             this.Controls.Add(this.textBoxKeyEdit);
             this.Controls.Add(this.labelKeyName);
             this.Name = "KeySetControl";
-            this.Size = new System.Drawing.Size(309, 29);
+            this.Size = new System.Drawing.Size(172, 29);
             this.ResumeLayout(false);
             this.PerformLayout();
 

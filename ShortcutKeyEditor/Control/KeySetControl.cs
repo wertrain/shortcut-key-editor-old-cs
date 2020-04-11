@@ -31,6 +31,11 @@ namespace ShortcutKeyEditor
         public string KeySetName { get; set; }
 
         /// <summary>
+        /// ラベル表示幅
+        /// </summary>
+        public int LabelWidth { get { return labelKeyName.Width; } }
+
+        /// <summary>
         /// ラベル文字色
         /// </summary>
         public Color LabelColor

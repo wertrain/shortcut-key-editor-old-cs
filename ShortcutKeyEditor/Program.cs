@@ -12,11 +12,11 @@ namespace ShortcutKeyEditor
         /// アプリケーションのメイン エントリ ポイントです。
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormKeyEditor());
+            Application.Run(new FormKeyEditor(args));
         }
     }
 }
