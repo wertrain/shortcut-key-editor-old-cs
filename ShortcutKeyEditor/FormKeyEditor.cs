@@ -116,6 +116,18 @@ namespace ShortcutKeyEditor
                 }
             }
 
+            var hashset = new HashSet<string>();
+            foreach (var keyset in keysets)
+            {
+                if (keyset.KeyText != "None" && !hashset.Add(keyset.KeyText))
+                {
+                    MessageBox.Show(
+                        keyset.KeyText + " が重複して登録されています。",
+                        Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+
             if (ShortcutKeyManager.WriteSettings(@"./shortcutkeys.xml", keysets))
             {
                 Close();
